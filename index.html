@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEXTCHCKER</title>
+  <!-- ファビコンを入れる -->
+  <link rel="icon" type="image/jpg" href="img/favicon.jpg">
+   <!-- CSSをリセット -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <!-- CSSにリンク -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- ブートストラップアイコン設定 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <header>
+                <!-- ラッパーclassはここから始まり -->
+    <div class="wrapper"> 
+      <a href="index.html">
+        <h1 class="logo">
+          <img src="img/logo.png" alt="TEXTCHECKER">
+        </h1>
+      </a>
+      <div>
+        <i class="bi bi-apple"></i></div>
+      </div>
+  </header>
+
+                 <!-- メインエリア -->
+  <main>
+  <h2>【STEP】 Input text→Click "GET CHECKED"</h2>
+ 
+  <form id = "inputURL">
+    <textarea id = "URLInput" placeholder="Websiteの場合はここにURLを入力してください"></textarea>
+    <i class="bi bi-arrow-down-circle-fill"></i>
+  </form>
+
+  <form id = "input">
+    <textarea id = "textInput" placeholder="ここにテキストを入力してください"></textarea>
+  </form>
+
+  <div id = "checkButton">
+    <button type="button">GET CHECKED</button>
+  </div>
+
+  <div id = "output">
+    <div id="outputText" contenteditable="true"></div>
+  </div>
+
+  <div id = "countDiv">
+    <p id="countText"></p>
+  </div>
+  
+
+  <div id = appendix>
+    <p id displayAppendix>参考情報</p>
+    <div id = "outputRules"></div>
+  </div>
+
+  <script src="css/scriptcopy.js"></script>
+  </main>
+
+  <footer>
+    <div class="wrapper">
+      <small>&copy; Yoko.jp</small>
+    </div>
+  </footer>
+  
+</body>
+</html>
