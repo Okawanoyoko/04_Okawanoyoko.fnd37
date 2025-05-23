@@ -24,11 +24,10 @@ function highlightIncrrText(inputText, rulesBox) {
       if (highlightedText.includes(eachWord)) {
     //その単語(eachWord)を全文内(highlightedText)で赤色にする
     // (一部だけ赤にする方法が↓どうしてもわからずチートしました)
-            highlightedText = highlightedText.replaceAll
-            (eachWord, "<span style='color:red;'>" + eachWord + "</span>");
-    }
+highlightedText = highlightedText.replace(new RegExp(eachWord, 'g'), "<span style='color:red;'>" + eachWord + "</span>");
       }
     return highlightedText;
+}
 }
 
             //★★★参考情報を出す関数を作る★★★
