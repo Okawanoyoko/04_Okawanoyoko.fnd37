@@ -23,7 +23,7 @@ function highlightIncrrText(inputText, rulesBox) {
     // もし墨文字全文highlightedTextが配列の単語を含んでいたら
       if (highlightedText.includes(eachWord)) {
     //その単語(eachWord)を全文内(highlightedText)で赤色にする
-    // (一部だけ赤にする方法が↓どうしてもわからずチートしました)
+    // (一部だけ赤にする方法が↓どうしてもわからずチートしました。授業の方法の入れ替えでもできそうなので、土曜に検討します。)
             highlightedText = highlightedText.replaceAll
             (eachWord, "<span style='color:red;'>" + eachWord + "</span>");
     }
