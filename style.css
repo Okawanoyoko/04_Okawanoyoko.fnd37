@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+/* 共通スタイル */
+html {
+  display: flex;
+  justify-content:stretch;
+  font-size: 100%;
+  background-image: linear-gradient(184deg, rgba(255, 255, 255, 0), rgba(243, 247, 251, 0.79) 0%, rgba(242, 246, 251, 0.79) 13%, rgba(240, 245, 251, 0.79) 43%, rgba(207, 224, 246, 0.79) 92%, rgba(233, 240, 250, 0.79));
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* ヘッダ（ロゴ・H1タイトル・ウェブアイコン） */
+header .wrapper {
+  display: flex;
+  justify-content:flex-start;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.bi-apple {
+  font-size: 85px;
+  justify-content:end;
+  margin-left: -5px;
+
+}
+
+.logo {
+  width: 400px;
+  margin-left: -20px;
+  margin-bottom: 20px;
+}
+
+/* 以下mainエリア */
+h2 {
+  font-size:20px !important;
+  margin-left: 30px;
+  color: rgb(63, 86, 86) !important;
+  font-weight:light;
+}
+
+#inputURL {
+  display: flex;
+  width: 1000px;
+  background-color: #fff;
+  height: 60px;
+}
+
+#countText {
+ display: flex;
+ justify-content: right;
+ margin-right: 20px;
+}
+
+main form{
+ width: 1000px;
+ height: 400px;
+ margin-bottom: 15px;
+ margin-left: 20px;
+ margin-right:20px;
+ background: #fff;
+
+ border-radius: 0.5em;
+ padding: 10px; 
+ box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+ }
+
+ 
+ textarea {
+ width: 95%;
+ height: 100%;
+ margin-top: 8px;
+ margin-bottom: 10px;
+ 
+ }
+
+ .bi-arrow-down-circle-fill {
+  font-size: 30px;
+  border-bottom: 10px;
+
+ }
+ 
+ #checkButton {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+ button {
+  display:block;
+  justify-content: center;
+  width: 300px;
+  height: 80px;
+  background-color: #2b2a2a;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+}
+
+#output {
+ width: 1000px;
+ height: 400px;
+ margin-bottom:5px;
+ margin-left: 20px;
+ margin-right:20px;
+ background-color: #fff;
+ border-radius: 0.5em;
+ box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+}
+
+#outputText {
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#outputRules {
+  margin-top:10px;
+  margin-bottom: 50px;
+  margin-left: 30px;
+}
+
+
+#appendix {
+  margin-left:20px;
+}
+
+/* フッタエリア */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+  height: 100px;
+}
+
+footer small {
+  display: block;
+  margin-top: 20px;
+}
+
