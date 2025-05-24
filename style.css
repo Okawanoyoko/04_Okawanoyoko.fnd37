@@ -2,155 +2,229 @@
 
 /* 共通スタイル */
 html {
-  display: flex;
-  justify-content:stretch;
   font-size: 100%;
+
   background-image: linear-gradient(184deg, rgba(255, 255, 255, 0), rgba(243, 247, 251, 0.79) 0%, rgba(242, 246, 251, 0.79) 13%, rgba(240, 245, 251, 0.79) 43%, rgba(207, 224, 246, 0.79) 92%, rgba(233, 240, 250, 0.79));
 }
 
-body {
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.wrapper {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-}
+/* imgをHTMLに入れていて削除したのですが、imgCSSを削除するとヘッダーが乱れ原因がわかりません。 */
 
-img {
-  max-width: 100%;
-  height: auto;
-}
+/* ヘッダ（ロゴ・ウェブアイコン） */
 
-
-/* ヘッダ（ロゴ・H1タイトル・ウェブアイコン） */
-header .wrapper {
+header {
   display: flex;
-  justify-content:flex-start;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  justify-content: left;
 }
+
+#logo img {
+  width: 400px;
+  height: auto;
+  max-width: 100%;/* 画像がはみ出さないように */
+  align-items: baseline;
+  margin:10px
+}
+
 
 .bi-apple {
-  font-size: 85px;
-  justify-content:end;
-  margin-left: -5px;
-
+  font-size: 78px;
+  margin-left: -5px; /* 位置調整 */
+  margin-right: auto; 
 }
 
-.logo {
-  width: 400px;
-  margin-left: -20px;
-  margin-bottom: 20px;
+.h2Container {
+  width: 100%;
+  text-align: left;
 }
 
-/* 以下mainエリア */
 h2 {
-  font-size:20px !important;
-  margin-left: 30px;
+  font-size: 15px !important;
+  margin-left: 10px;
   color: rgb(63, 86, 86) !important;
-  font-weight:light;
+  margin-bottom: 10px;
+      text-align: left !important;
+      margin-right: 500px;
+      width: 1000px;
+}
+
+main  {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
 }
 
 #inputURL {
   display: flex;
+  justify-content: center;
   width: 1000px;
   background-color: #fff;
   height: 60px;
 }
 
-#countText {
- display: flex;
- justify-content: right;
- margin-right: 20px;
+#URLInput {
+  margin-top: 0px;
+  height: 50px;
+  text-align: left;
+  align-items: center;
 }
 
 main form{
- width: 1000px;
- height: 400px;
- margin-bottom: 15px;
- margin-left: 20px;
- margin-right:20px;
- background: #fff;
-
- border-radius: 0.5em;
- padding: 10px; 
- box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+  width: 1000px;
+  height: 400px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right:20px;
+  margin-top:0px;
+  background: #fff;
+  border-radius: 0.5em;
+  padding: 20px; 
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
  }
-
  
  textarea {
- width: 95%;
- height: 100%;
- margin-top: 8px;
- margin-bottom: 10px;
- 
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  height: 100%;
+  margin-top: 0px;
+  margin-bottom: 10px;
  }
 
  .bi-arrow-down-circle-fill {
   font-size: 30px;
   border-bottom: 10px;
-
  }
  
- #checkButton {
+
+#checkButton {
   display: flex;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  max-width: 1000px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
  button {
-  display:block;
-  justify-content: center;
   width: 300px;
   height: 80px;
-  background-color: #2b2a2a;
   line-height: 50px;
   color: #fff;
   text-align: center;
+  border-radius: 5px;
+  background-color: #212121;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.5),
+    inset 0 1px 3px rgba(255, 255, 255, 0.3); 
+  font-size: 16px;
+  font-weight:lighter;
+  text-align: center;
+  transition:
+    background-color 0.3s,
+    color 0.3s,
+    transform 0.2s;
+}
+
+button:active {
+  transform: translateY(6px); 
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3); 
 }
 
 #output {
- width: 1000px;
- height: 400px;
- margin-bottom:5px;
- margin-left: 20px;
- margin-right:20px;
- background-color: #fff;
- border-radius: 0.5em;
- box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+  width: 1000px;
+  height: 400px;
+  max-height: 400px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right:20px;
+  background: #fff;
+  border-radius: 0.5em;
+  padding: 10px; 
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
+
 #outputText {
-  margin-top: 20px;
+  text-align: left;
+   max-height: 400px;
+  margin-top: 10px;
   margin-right: 10px;
   margin-left: 10px;
+  overflow: scroll;
+}
+
+#countDiv{
+  display: flex;
+  justify-content: right;
+  width: 1000px;
+  margin-right:20px
+}
+
+#countText {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 10px;
+}
+
+
+#referenceBox {
+  width: 1000px;
+  height: 100px;
+  border: 1px solid black; 
+  border-radius: 1rem;
+
+}
+
+#TitleForAppendix {
+  margin-left: 20px;
+  display: flex;
+  justify-content: left;
+  text-align: left;
 }
 
 #outputRules {
+  margin-left: 30px;
+  display: flex;
+  justify-content: left;
+  text-align: left;
   margin-top:10px;
   margin-bottom: 50px;
-  margin-left: 30px;
 }
 
-
-#appendix {
-  margin-left:20px;
-}
 
 /* フッタエリア */
 footer {
+  display: flex;
+  justify-content:space-around;
+  width: 100%;
   background-color: #000;
   color: #fff;
   padding: 30px 0;
   text-align: center;
   height: 100px;
-}
-
-footer small {
-  display: block;
   margin-top: 20px;
 }
 
+footer small {
+  font-size: 20px;
+  display: block;
+  margin-top: 20px;
+}
