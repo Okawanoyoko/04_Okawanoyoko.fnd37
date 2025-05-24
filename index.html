@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TEXTCHCKER</title>
+  <title>TEXTCHECKER</title>
   <!-- ファビコンを入れる -->
   <link rel="icon" type="image/jpg" href="img/favicon.jpg">
    <!-- CSSをリセット -->
@@ -17,22 +17,24 @@
 
 <body>
   <header>
-                <!-- ラッパーclassはここから始まり -->
-    <div class="wrapper"> 
+    <div id="logo"> 
       <a href="index.html">
-        <h1 class="logo">
+        <h1>
           <img src="img/logo.png" alt="TEXTCHECKER">
         </h1>
       </a>
-      <div>
+      </div>
+      
+      <div id = "apple">
         <i class="bi bi-apple"></i></div>
       </div>
   </header>
 
                  <!-- メインエリア -->
   <main>
-  <h2>【STEP】 Input text→Click "GET CHECKED"</h2>
- 
+    <div class="h2Container">
+      <h2>【STEP】 Input text→Click "GET CHECKED"</h2>
+    </div>
   <form id = "inputURL">
     <textarea id = "URLInput" placeholder="Websiteの場合はここにURLを入力してください"></textarea>
     <i class="bi bi-arrow-down-circle-fill"></i>
@@ -54,17 +56,16 @@
     <p id="countText"></p>
   </div>
   
-
-  <div>
-    <p id = "displayAppendix">参考情報</p>
+  <div id = "referenceBox">
+    <p id = "TitleForAppendix">参考情報</p>
     <div id = "outputRules"></div>
   </div>
 
   <script src="scriptcopy.js"></script>
-  </main>
+ </main>
 
   <footer>
-    <div class="wrapper">
+    <div>
       <small>&copy; Yoko.jp</small>
     </div>
   </footer>
