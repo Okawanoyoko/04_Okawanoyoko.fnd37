@@ -152,11 +152,11 @@ button:active {
 
 #outputText {
   text-align: left;
-  max-height: 400px;
+  max-height: 350px;
   margin-top: 10px;
   margin-right: 10px;
   margin-left: 10px;
-  overflow: scroll;
+  overflow: auto;
 }
 
 #countDiv{
