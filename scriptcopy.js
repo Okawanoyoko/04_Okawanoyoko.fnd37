@@ -1,6 +1,6 @@
 'use strict'
 
-      //★★★DOM:関数イベントに必要なHTMLの要素からとってくる★★★
+      //★★★DOM:関数イベントに必要なHTMLの要素をとってくる★★★
 //DOM:HTMLタグID=textInputに紐づける変数宣言（値化は関数内で実施）。
 const textInputElement = document.getElementById("textInput");
 //同様にID=checkButtonに紐づける変数宣言
