@@ -33,12 +33,12 @@ main {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  width: 90%;
 }
-
 
 .h2Container {
   width: 100%;
@@ -55,15 +55,6 @@ h2 {
     text-align: left !important;
     margin-right: 500px;
     width: 1000px;
-}
-
-main  {
-  display: flex;
-  flex-direction: column; 
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  margin: 0 auto;
 }
 
 #inputURL {
@@ -107,7 +98,6 @@ main form{
   font-size: 30px;
   border-bottom: 10px;
  }
- 
 
 #checkButton {
   display: flex;
@@ -159,7 +149,6 @@ button:active {
   padding: 10px; 
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
 }
-
 
 #outputText {
   text-align: left;
