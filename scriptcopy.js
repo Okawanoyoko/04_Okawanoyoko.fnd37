@@ -1,10 +1,12 @@
 'use strict'
 
-            //★★★DOM HTMLの要素からとってくる★★★
+      //★★★DOM:関数イベントに必要なHTMLの要素からとってくる★★★
 //DOM:HTMLタグID=textInputに紐づける変数宣言（値化は関数内で実施）。
 const textInputElement = document.getElementById("textInput");
 //同様にID=checkButtonに紐づける変数宣言
 const checkButton = document.getElementById("checkButton");
+
+
 
             //★★★表記リストの配列を作る★★★
 //もっとスマートに作りたかったのですが混乱してしまったためただの配列にしました。
@@ -58,7 +60,7 @@ const rulesDetails = {
 }
 
 //上記オブジェクトのkeyが、配列inputTextにincludesしていたら
-// ”その単語だけ”赤にする関数を作る
+//該当のruleDetailsを配列resultに入れる関数を作る
 function extractDetails(rulesDetails,inputText) {
   let result = [];
   for (const key in rulesDetails) {
