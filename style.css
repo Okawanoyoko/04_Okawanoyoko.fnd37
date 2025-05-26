@@ -13,7 +13,6 @@ header {
 }
 
 
-/縮小で意図しない動きあり/
 #logo img {
   width: 400px;
   height: auto;
@@ -24,7 +23,7 @@ header {
 
 .bi-apple {
   font-size: 78px;
-  margin-left: -5px; /* 位置調整 */
+  margin-left: -5px;
   margin-right: auto; 
 }
 
