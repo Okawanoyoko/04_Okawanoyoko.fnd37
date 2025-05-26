@@ -12,10 +12,12 @@ header {
   justify-content: left;
 }
 
+
+/縮小で意図しない動きあり/
 #logo img {
   width: 400px;
   height: auto;
-  max-width: 100%;/* 画像がはみ出さないように */
+  max-width: 100%; 
   align-items: baseline;
   margin:10px
 }
